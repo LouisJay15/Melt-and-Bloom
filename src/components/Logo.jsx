@@ -1,7 +1,9 @@
+const base = import.meta.env.BASE_URL;
+
 export default function Logo({ size = 48, variant = 'dark' }) {
   const src = variant === 'light'
-    ? '/images/logo-sand-on-navy.png'
-    : '/images/logo-navy-on-sand.png';
+    ? `${base}images/logo-sand-on-navy.png`
+    : `${base}images/logo-navy-on-sand.png`;
   return (
     <span style={{
       display: 'inline-block', height: size, width: size,

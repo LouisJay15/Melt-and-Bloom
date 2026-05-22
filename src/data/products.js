@@ -1,3 +1,5 @@
+const base = import.meta.env.BASE_URL;
+
 export const IMG = {
   midnight:     'https://lh3.googleusercontent.com/aida-public/AB6AXuC0j7UdUz9IDXx0tJEyON8J6NauRWy2H5WX195--3VcGGbooOtu7Ae4HKjcEv1C8YGvfzGRSQsFp-KeQPxVw5cdRhOEqUngbRdmRZwTd9kKuCa0enjhO3fR5vfwpovFBo1Sm2IrEQ1E3V2zC4VybA9ud4H2fVCr4C18kpCd2We3yezqLQg-KnhcjuHizHQFWyTH12BaS-MfSydE0WZKriRqVr7sKOlqtWOd12BoQSp0GDZcWPcPXbTTruV7B8TeqAgxK1XJWh4Dl329',
   smoked:       'https://lh3.googleusercontent.com/aida-public/AB6AXuDOaDa4g0DUvG_yOdgdLPyh7bAE8c7GK35fCxLMksVLGSH-brX5lnNNMaFlsTH4ebY5chkbx6b0gldhkcwRg3LZO1nd3GT6tnIKcYjFYfRxiXcYFe0e9oo3GUpCHYfjw2qfaG-PVsmPEXmIm6FezONo5R9_ViGH5QuD3FRzighsAeer_Z94YU3vBn3TjBJN6FH8gtBcCp9AOoANL6EfHRx6wKUuMhGqg5iFhi4uNPhQIuCi7b9Tj9yjwhMYL7MvvXHOvX3-ObYxZUvp',
@@ -7,9 +9,9 @@ export const IMG = {
   midnightWoods:'https://lh3.googleusercontent.com/aida-public/AB6AXuCBA_-sAAMjilOZkLfk9E9dTlwW8Sw2VRyqm3W22mGBnyweg8wZ4EBdMLr3zR4ptMHJMVV8JbhvJ7-8G4kVfiOjPH2W9rLjNlO-THmuMV5sqHQOeYlBt6vNIt2eOVwGrss6WGOaUdTmcPVuoF-FDOqZe02SLvFiVIcF5W9bdpHP8C-iRIzyzsrfQqvbZtwqmAqZtDH8gtdPeeJR8w23ZVrLjgkJpB4_gD51J-QRa5VGwqFoDlGnP6-w1YNKp9wxt0xlM97T_G1CY1MY',
   seasalt:      'https://lh3.googleusercontent.com/aida-public/AB6AXuDMKEPfSe00FB05z1TDmQ0qiy1y-0khjxN_4F55YlP_8SAnMUjLBSC_g6UXl0QwCQp7LXYQRFhKaOkdE7pIz5Inz-Q2bqjtnemBbe9WDTm-3byUVCyMYzzxAY0YA4Tbw5Dm4ukEm3yHoPjz4kRIz50WXps3_1WvBk4AXVPjxG90iLBVNkNnpOWe3BLZKxETKSm39rsmwp1wJFM12r_L0NFkpUEKN8FqocsCjP1p0nyDOSnx5eqsFGf6MvSx-kjXcczVhp3lj1pBLK0P',
   hero:         'https://lh3.googleusercontent.com/aida-public/AB6AXuAzA2VW2I6uo-KQwHLCPimZBain8odOSVuJm51vntqdQAQt7mEtk328os6JGhbRdrwu0m0Dq1MITqxVMlrlm4R9XAXGB7FEAAaJREo6jxPgmR2TgZ4VWIrVyt_gO6ubBR9_udC3-tSjoTCr-LSwIyCiOxD7k6nkvjLB2M_VkFa5tF3dBeAdKyktxHomXUOuY2zu4m7_aldOrfzG9B54dkRrc9wpCZPdg38ZcKcS-MPz7yXhvW9dVERnb7-w1KHu_u0c328qWdFScVrv',
-  crafting:     '/images/studio-supplies.jpg',
-  pouring:      '/images/wax-pouring.jpg',
-  linen:        '/images/founder-apron.jpg',
+  crafting:     `${base}images/studio-supplies.jpg`,
+  pouring:      `${base}images/wax-pouring.jpg`,
+  linen:        `${base}images/founder-apron.jpg`,
   g1:  'https://lh3.googleusercontent.com/aida-public/AB6AXuAs7OCdPPmMHJIyj6_QSRBgT8eW8On087s20VShBqbg7R1I3mSkzWxxBQKcqNYyDjLKNL1fztRhlcxc9XS5vaWfoldZ0pOw3v9kK2qUk8Df2N8AWa5H2uJQXJJ3MMry0elsOwjORhFsB2jx08CnZzCImd9cW9XHJrIFbp5yYpuRVrsqFNsbWrDAeQbYCbdiq3OWoGhepW50PD4zPCk5RwIJMqk7iMUOu2yFe3rUmmTt3aVpWVFF01Sv_mhNmEVbpK6mUCRLM2NKi8nJ',
   g2:  'https://lh3.googleusercontent.com/aida-public/AB6AXuCYJ0YRB6d_zQjZAj2yC_c1OQuBN3tSnQE3VrDZ8u53JwxlNZo1Y42CFzP4opRcYNCaLXcO0hJgCW1Emj5A-iPDKsP0cwikVWu5rkJZ3LUeJsTaJCVyJPB3FG-TiTNa4xNo3IK7whLSsSDAPXH8mkqYRymzbWwdecME_EX-KWrQ1xJIVUBAYtCUHDmq5A9eTJ5lldDekMvCznNjMuiP2PpfGsTG13Eg2VJ4koa_rvdCHFM2tE6NCEOkcTsTCFAIS13GMVFzCcaTXKlR',
   g3:  'https://lh3.googleusercontent.com/aida-public/AB6AXuD50FnJLKDaHu-ScUygaXJ4z9MnqKsZWjl86IGS9akX3Aje3yK51RpYLSTFCTTeUwsZiT_6SraIjjBBXKAoJ-vUUrScUTyjTbUYHXzHWmtObMxYuDnfFkrqpAtg9D0Q89wg5jNo8n-seGhOMWUQimyXA0FjIivFjKEiWmHjyl01bYovcc6Is1D95yF1GmmPIDTGwt9xIqWqxEe7HfZlvC5QgK_v98j-753B7238WPTnBQXPM5y53Xvgu77rJHB6LGhpWWCf4wmmlh_y',
@@ -21,8 +23,8 @@ export const IMG = {
   amber:     'https://lh3.googleusercontent.com/aida-public/AB6AXuC43ofRphG9JxedPH-mf86rSyHgWQJW9FHx1MEcxAFLtuiauAYsLm6VEHjZSXPxR6pXwp5Rh0wk6ArNLynuTgJFZ-gIqM4h2Zn1-l7_Z3i0e3vLU5UB8OctLxP1IZmVpkYEfPKYg_C8jzahNdITcwCERxc9V3r0Ltr2w1W3Yey0dYBXWh4SyaaJ4if1YLSTTNxZQQr1hcJCsziLt3fpCaHZSNDn4MyUsLVNB6cBIbabgkk3qmlCVt3S3VXm2ZH3QU8a5cI0vicYT7JD',
   diffuser:  'https://lh3.googleusercontent.com/aida-public/AB6AXuD5f6gkxeeq2OP6u_w8NCrTA8RGzH4ZNB2lDLJXkL8hWjG5Mxgnl3YZgk3oixNRBB4moriA5kt5gfe8MaXJYIeDnUAeIiW3bi77auQ3mDwt48TtK93F6o2aVmX59eBr-VilfYaos6YYslsZQ5w6NRP3M_9o8Bp5cosYHzS64h-XWSJMGPntD6PUvsmED5Ea0_6jzVLur3ofoDsq6nNK3E-wMA7k3-_hhZ84daH-gUvsDl2xHNeWjEVrtvM3wrSGl7q4bUG8iH7w9JSs',
   discovery: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDiBe3OHf0Qqs-V2dSEdvRXL7pDbYdZpaYVa3dvOznqgXyN3BPM7VjtPoAueds6Rczi8II8JSUTqOgCG-2ik0hRg_VSKA8v53RtAuZgkWU3pTAAH6XKEaMLCRC2yK4wsGrfhs3o0CAvgkKxPD10ZIckzyhxeGz7zDxSLr5tLgJFAPnNHG3VhBBCsSqSPMSO_ldDDuEJeMOEF3oljXnagbPEyzXt3z6LaIxRrHxa11fbKK6HNMK8qqYZzEJe3fFIuN_5vK2m_r6stwZ9',
-  pouring2:  '/images/pouring-studio.jpg',
-  arranged:  '/images/smoke-extinguish.jpg',
+  pouring2:  `${base}images/pouring-studio.jpg`,
+  arranged:  `${base}images/smoke-extinguish.jpg`,
 };
 
 export const products = [
@@ -39,18 +41,18 @@ export const products = [
 ];
 
 export const gallery = [
-  { src: '/images/01-two-clear-candles.jpg', ratio: '2/3', caption: 'Pair · No. 01' },
-  { src: '/images/04-marble-pink.jpg',       ratio: '3/2', caption: 'Bloom · Studio still life' },
-  { src: '/images/02-candle-books.jpg',      ratio: '2/3', caption: 'Reading hour · Wilde + grapefruit' },
-  { src: '/images/08-three-coloured.jpg',    ratio: '3/2', caption: 'Edition 04 · Pour day' },
-  { src: '/images/05-shelf-lit.jpg',         ratio: '2/3', caption: 'On the shelf · Late afternoon' },
-  { src: '/images/07-roses-slate.jpg',       ratio: '3/2', caption: 'Dried roses · Slate' },
-  { src: '/images/09-amber-glow.jpg',        ratio: '2/3', caption: 'Amber hour' },
-  { src: '/images/11-smoke-bw.jpg',          ratio: '3/2', caption: 'After-burn · No. 02' },
-  { src: '/images/03-holding-lit.jpg',       ratio: '3/2', caption: 'In hand · Workshop' },
-  { src: '/images/06-flatlay-trio.jpg',      ratio: '2/3', caption: 'Trio · Lavender pour' },
-  { src: '/images/12-daisies.jpg',           ratio: '3/2', caption: 'Chamomile morning' },
-  { src: '/images/10-cotton-still.jpg',      ratio: '3/2', caption: 'Cotton · Linen Sky' },
+  { src: `${base}images/01-two-clear-candles.jpg`, ratio: '2/3', caption: 'Pair · No. 01' },
+  { src: `${base}images/04-marble-pink.jpg`,       ratio: '3/2', caption: 'Bloom · Studio still life' },
+  { src: `${base}images/02-candle-books.jpg`,      ratio: '2/3', caption: 'Reading hour · Wilde + grapefruit' },
+  { src: `${base}images/08-three-coloured.jpg`,    ratio: '3/2', caption: 'Edition 04 · Pour day' },
+  { src: `${base}images/05-shelf-lit.jpg`,         ratio: '2/3', caption: 'On the shelf · Late afternoon' },
+  { src: `${base}images/07-roses-slate.jpg`,       ratio: '3/2', caption: 'Dried roses · Slate' },
+  { src: `${base}images/09-amber-glow.jpg`,        ratio: '2/3', caption: 'Amber hour' },
+  { src: `${base}images/11-smoke-bw.jpg`,          ratio: '3/2', caption: 'After-burn · No. 02' },
+  { src: `${base}images/03-holding-lit.jpg`,       ratio: '3/2', caption: 'In hand · Workshop' },
+  { src: `${base}images/06-flatlay-trio.jpg`,      ratio: '2/3', caption: 'Trio · Lavender pour' },
+  { src: `${base}images/12-daisies.jpg`,           ratio: '3/2', caption: 'Chamomile morning' },
+  { src: `${base}images/10-cotton-still.jpg`,      ratio: '3/2', caption: 'Cotton · Linen Sky' },
 ];
 
 export const tiers = [
