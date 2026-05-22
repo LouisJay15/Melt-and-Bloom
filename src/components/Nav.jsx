@@ -47,7 +47,7 @@ export default function Nav({ viewport = 'desktop' }) {
 
   const navBase = {
     position: 'sticky', top: 0, zIndex: 40,
-    background: scrolled ? 'rgba(237,224,212,0.92)' : 'rgba(237,224,212,0)',
+    background: scrolled ? 'rgba(226,210,192,0.94)' : 'rgba(226,210,192,0)',
     backdropFilter: scrolled ? 'blur(14px) saturate(1.05)' : 'none',
     WebkitBackdropFilter: scrolled ? 'blur(14px) saturate(1.05)' : 'none',
     borderBottom: scrolled ? `1px solid ${c.line}` : '1px solid transparent',

@@ -17,7 +17,7 @@ function HeroCinematic({ viewport }) {
   return (
     <section style={{ position: 'relative', minHeight: isMobile ? 580 : 720, overflow: 'hidden', background: c.paper }}>
       <div style={{ position: 'absolute', inset: 0 }}>
-        <img src={IMG.hero} style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.85, filter: 'saturate(0.95) contrast(1.02)' }} alt="Candle in warm light"/>
+        <img src={IMG.hero} fetchpriority="high" style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.85, filter: 'saturate(0.95) contrast(1.02)' }} alt="Candle in warm light"/>
         <div style={{ position: 'absolute', inset: 0, background: `linear-gradient(180deg, rgba(246,241,234,0.15) 0%, rgba(246,241,234,0.6) 70%, ${c.paper} 100%)` }}/>
       </div>
       <div style={{ position: 'relative', maxWidth: 1280, margin: '0 auto', padding: `${isMobile ? 120 : 180}px ${isMobile ? d.padX / 2 : d.padX}px ${isMobile ? 60 : 100}px`, textAlign: isMobile ? 'left' : 'center' }}>
@@ -56,7 +56,7 @@ function HeroSplit({ viewport }) {
           </div>
         </div>
         <div style={{ position: 'relative', aspectRatio: '3/4', overflow: 'hidden' }}>
-          <img src={IMG.hero} style={{ width: '100%', height: '100%', objectFit: 'cover' }} alt=""/>
+          <img src={IMG.hero} fetchpriority="high" style={{ width: '100%', height: '100%', objectFit: 'cover' }} alt=""/>
           <div style={{ position: 'absolute', bottom: 16, left: 16, right: 16, background: 'rgba(15,28,55,0.7)', backdropFilter: 'blur(6px)', padding: '12px 16px', borderRadius: 4, color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'space-between', fontFamily: t.body, fontSize: 13 }}>
             <span style={{ fontFamily: t.display, fontStyle: t.displayItalic, fontSize: 18 }}>Midnight Jasmine</span>
             <span style={{ fontFamily: t.label, fontSize: 10, letterSpacing: '0.2em', textTransform: 'uppercase' }}>New →</span>
@@ -165,7 +165,7 @@ function CraftStory({ viewport }) {
     <Section viewport={viewport} style={{ background: c.paper }}>
       <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', gap: isMobile ? 32 : 80, alignItems: 'center' }}>
         <div style={{ position: 'relative', aspectRatio: '4/5', overflow: 'hidden', order: isMobile ? 1 : 0 }}>
-          <img src={IMG.pouring2} style={{ width: '100%', height: '100%', objectFit: 'cover' }} alt="Pouring wax"/>
+          <img src={IMG.pouring2} loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover' }} alt="Pouring wax"/>
           <div style={{ position: 'absolute', bottom: 16, left: 16, fontFamily: t.label, fontSize: 10, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#fff', background: 'rgba(15,28,55,0.6)', padding: '5px 10px', borderRadius: 4 }}>Studio · Thursday</div>
         </div>
         <div>

@@ -14,7 +14,7 @@ export default function ProductCard({ p, onClick, viewport }) {
     return (
       <div onClick={onClick} onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)} style={card}>
         <div style={{ position: 'relative', aspectRatio: '4/5', overflow: 'hidden', background: c.sand }}>
-          <img src={p.img} alt={p.name} style={{ width: '100%', height: '100%', objectFit: 'cover', transform: hover ? 'scale(1.04)' : 'scale(1)', transition: `transform ${m.dur * 2}ms ${m.ease}` }}/>
+          <img src={p.img} alt={p.name} loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover', transform: hover ? 'scale(1.04)' : 'scale(1)', transition: `transform ${m.dur * 2}ms ${m.ease}` }}/>
           <div style={{ position: 'absolute', top: 14, left: 14, fontFamily: t.label, fontSize: 10, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#fff', background: 'rgba(15,28,55,0.55)', padding: '4px 10px', borderRadius: 999, backdropFilter: 'blur(4px)' }}>{p.family}</div>
           <button onClick={(e) => { e.stopPropagation(); addToCart(p.id); }} style={{ position: 'absolute', bottom: 14, right: 14, background: '#fff', color: c.navy, border: 'none', borderRadius: 999, padding: '10px 16px', cursor: 'pointer', fontFamily: t.label, fontSize: 11, letterSpacing: '0.16em', textTransform: 'uppercase', fontWeight: 600, opacity: hover ? 1 : 0, transform: hover ? 'translateY(0)' : 'translateY(8px)', transition: `all ${m.dur}ms ${m.ease}` }}>+ Add</button>
         </div>
@@ -33,7 +33,7 @@ export default function ProductCard({ p, onClick, viewport }) {
     return (
       <div onClick={onClick} onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)} style={{ ...card, background: '#fff', border: `1px solid ${c.line}`, padding: 16, borderRadius: 8, transition: `all ${m.dur}ms ${m.ease}`, boxShadow: hover ? '0 18px 40px rgba(15,28,55,0.08)' : 'none' }}>
         <div style={{ aspectRatio: '1/1', overflow: 'hidden', background: c.sand, borderRadius: 4 }}>
-          <img src={p.img} alt={p.name} style={{ width: '100%', height: '100%', objectFit: 'cover', transform: hover ? 'scale(1.04)' : 'scale(1)', transition: `transform ${m.dur * 2}ms ${m.ease}` }}/>
+          <img src={p.img} alt={p.name} loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover', transform: hover ? 'scale(1.04)' : 'scale(1)', transition: `transform ${m.dur * 2}ms ${m.ease}` }}/>
         </div>
         <div style={{ paddingTop: 14, display: 'flex', flexDirection: 'column', gap: 4 }}>
           <div style={{ fontFamily: t.label, fontSize: 10, letterSpacing: '0.18em', textTransform: 'uppercase', color: c.slate }}>{p.family}</div>
@@ -51,7 +51,7 @@ export default function ProductCard({ p, onClick, viewport }) {
   return (
     <div onClick={onClick} onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)} style={{ ...card, alignItems: 'center', textAlign: 'center' }}>
       <div style={{ width: '100%', maxWidth: 260, aspectRatio: '1/1', borderRadius: '50%', overflow: 'hidden', background: c.sand, boxShadow: hover ? '0 28px 60px rgba(15,28,55,0.18)' : '0 6px 18px rgba(15,28,55,0.05)', transition: `all ${m.dur * 1.4}ms ${m.ease}`, transform: hover ? 'translateY(-4px)' : 'translateY(0)' }}>
-        <img src={p.img} alt={p.name} style={{ width: '100%', height: '100%', objectFit: 'cover', transform: hover ? 'scale(1.06)' : 'scale(1)', transition: `transform ${m.dur * 2}ms ${m.ease}` }}/>
+        <img src={p.img} alt={p.name} loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover', transform: hover ? 'scale(1.06)' : 'scale(1)', transition: `transform ${m.dur * 2}ms ${m.ease}` }}/>
       </div>
       <div style={{ marginTop: 18, fontFamily: t.label, fontSize: 10, letterSpacing: '0.22em', textTransform: 'uppercase', color: c.slate }}>{p.family}</div>
       <div style={{ marginTop: 6, fontFamily: t.display, fontStyle: t.displayItalic, fontSize: vp === 'mobile' ? 20 : 24, color: c.navy, lineHeight: 1.2, maxWidth: 220 }}>{p.name}</div>

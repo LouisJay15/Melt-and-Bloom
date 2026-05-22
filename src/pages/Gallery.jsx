@@ -36,6 +36,7 @@ export default function Gallery({ viewport = 'desktop' }) {
               <img
                 src={g.src}
                 alt=""
+                loading="lazy"
                 style={{ width: '100%', height: '100%', objectFit: 'cover', transition: `transform ${theme.m.dur * 2}ms ${theme.m.ease}` }}
                 onMouseEnter={(e) => { e.currentTarget.style.transform = 'scale(1.04)'; }}
                 onMouseLeave={(e) => { e.currentTarget.style.transform = 'scale(1)'; }}

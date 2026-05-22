@@ -4,10 +4,11 @@ export default function Logo({ size = 48, variant = 'dark' }) {
   const src = variant === 'light'
     ? `${base}images/logo-sand-on-navy.png`
     : `${base}images/logo-navy-on-sand.png`;
+  const bg = variant === 'light' ? '#0f1c37' : '#e2d2c0';
   return (
     <span style={{
       display: 'inline-block', height: size, width: size,
-      borderRadius: '50%', overflow: 'hidden',
+      borderRadius: '50%', overflow: 'hidden', background: bg,
       userSelect: 'none', flex: 'none', verticalAlign: 'middle',
     }}>
       <img

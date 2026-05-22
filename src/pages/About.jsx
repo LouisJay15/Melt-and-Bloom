@@ -26,7 +26,7 @@ export default function About({ viewport = 'desktop' }) {
 
       <section style={{ padding: `0 ${isMobile ? d.padX / 2 : d.padX}px` }}>
         <div style={{ maxWidth: 1440, margin: '0 auto', aspectRatio: isMobile ? '4/5' : '21/9', overflow: 'hidden', background: c.sand }}>
-          <img src={IMG.pouring} style={{ width: '100%', height: '100%', objectFit: 'cover' }} alt="Pouring"/>
+          <img src={IMG.pouring} loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover' }} alt="Pouring"/>
         </div>
       </section>
 
@@ -79,7 +79,7 @@ export default function About({ viewport = 'desktop' }) {
       <Section viewport={viewport}>
         <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', gap: isMobile ? 32 : 80, alignItems: 'center' }}>
           <div style={{ aspectRatio: '4/5', overflow: 'hidden', background: c.sand }}>
-            <img src={IMG.crafting} style={{ width: '100%', height: '100%', objectFit: 'cover' }} alt="Studio"/>
+            <img src={IMG.crafting} loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover' }} alt="Studio"/>
           </div>
           <div>
             <Eyebrow>The people</Eyebrow>
